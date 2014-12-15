@@ -1,0 +1,93 @@
+
+a
+{
+	color: #22BCE0;
+	text-decoration: none;
+}
+body
+{
+	background: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+header{
+	background-color: #9F2C2C;
+	overflow: hidden;
+	padding: 1em;
+}
+header figure{
+	float: left;
+}
+header #autor img{
+	border-radius: 55%;
+	height: 6em;
+	width: 6em;
+}
+header h1{
+	color: white;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+h2{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 20em;/**************mientras se aplica diseño responsivo*****/
+}
+nav{
+	background-color: #9F2C2C;	
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline;
+	
+}
+nav ul li a{
+	color: white;
+	font-size: 0.7em;
+	padding: 0.7em;
+}
+nav ul li a:hover{
+	background-color: #D73939;
+	transition-duration: 1000ms;
+}
+section{
+	height: 34em;
+}
+section article{
+	height: 30em;
+}
+section article h2{
+	margin: 22% 22%;
+	padding: 2em;
+	width: 100%;
+}
+section a{
+	font-size: 2em;
+	margin: 1em 22%;
+	padding: 2em;
+	width: 100%;
+}
+#home{
+	background-image: url(../imagenes/fondo.jpg);
+	color: white;
+	
+}
+
+
+/*
+#containerFixed{
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
+*/
+
+

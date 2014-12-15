@@ -1,26 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>practicando git</title>
-	<script type="text/javascript" src="script.js"></script>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/estilos.css"/>
+	<title>practicando diseño web</title>
+	<!---<script type="text/javascript" src="script.js"></script>-->
+
 </head>
 <body>
+	<div id="containerFixed">
 	<header>
-		<h1>Practicando git</h1>
+		<figure id="autor">
+			<img src="imagenes/milton.png" alt="logo del autor" />
+		</figure>
+		<h1>
+			BLOG DE PRACTICA "Diseño Web"MILTON CASTAÑEDA
+		</h1>
 	</header>
-	<section class="seccion">
+	<nav>
+		<ul>
+			<li ><a href="">HOME</a></li>
+			<li ><a href="">CONTACTAME</a></li>
+			<li ><a href="">PORTAFOLIO</a></li>
+			<li ><a href="">EXPERIENCIA</a></li>
+			<li ><a href="">EJEMPLO</a></li>
+			
+		</ul>
+	</nav>
+</div><!--fin containerFixed-->
+	<section class="seccion" id="home">
+		<article>
+			<h2>Milton Castañeda</h2>
+		</article>
+		<a href="">siguiente</a>
+	</section>
+	<section class="seccion" id="portafolio">
+		<article>
+			<h2>PORTAFOLIO</h2>
+			<figure class="portafolio">
+				<img src="imagenes/portafolio1.jpg" alt="portafolio1">
+				<figcaption>Portafolio </figcaption>
+			</figure>
+			<figure class="portafolio">
+				<img src="imagenes/portafolio2.jpg" alt="portafolio2">
+				<figcaption>Portafolio 2</figcaption>
+			</figure>
+			<figure class="portafolio">
+				<img src="imagenes/portafolio3.jpg" alt="portafolio3">
+				<figcaption>Portafolio 3</figcaption>
+			</figure>
+			<figure class="portafolio">
+				<img src="imagenes/portafolio4.jpg" alt="portafolio4">
+				<figcaption>Portafolio 4</figcaption>
+			</figure>
+			<figure class="portafolio">
+				<img src="imagenes/portafolio5.jpg" alt="portafolio5">
+				<figcaption>Portafolio 5</figcaption>
+			</figure>
+		</article>
+		<a href="">siguiente</a>
+	</section>
+	<section class="seccion" id="perfil">
+		<article>
+			<h2>PERFIL</h2>
+			<p>
+				For pages that set an initial or maximum scale, this means the width property actually translates into a minimum viewport width. For example, if your layout needs at least 500 pixels of width then you can use the following markup. When the screen is more than 500 pixels wide, the browser will expand the viewport (rather than zoom in) to fit the screen:
+			</p>
+		</article>
+		<a href="">siguiente</a>
+	</section>
+	<section class="seccion" id="contactame">
+		<article>
+			<h2>CONTACTAME</h2>
+			<form method="post">
+				<input type="text" placeholder="nombre" name="nombre" id="nombre">
+				<input type="text" placeholder="apellido" name="apellido" id="apellido">
+				<textarea name="mensaje" id="mensaje" placeholder="mensaje" cols="30" rows="10">
+					
+				</textarea>
+				<input type="submit">
+				<input type="reset">
+			</form>
+			<figure class="contacteme">
+				<a href=""><img src="" alt=""></a>
+				<figcaption></figcaption>
+			</figure>
+		</article>
+		<a href="">siguiente</a>
+	</section>
+
+	<section class="seccion" id="ejmplo">
 		<article class="articulo">
-			<p>Esto es una <strong> practica de Git</strong> </p>
+			<h2>EJEMPLO</h2>
+			<p >Esto es una <strong> practica de Git</strong> </p>
 			<input type="button" id="boton" value="cambiar">
-			<input type="text" id="campo" placeholder="ingrese un numero del 1 al 3">
+			<input type="text" id="campo" placeholder="ingreso un numero del 1 al 3">
 			<figure id="figura" >
-				<img src="1.jpg" alt="imagen" id="imagen" width="700" height="300" >	
+				<img src="imagenes/1.jpg" alt="imagen" id="imagen" width="700" height="300" >	
 			</figure>
 			
 		</article>
+		<div>
+			<a href="">siguiente</a>	
+		</div>
+		
 	</section>
-	<footer id="pie"><em>Milton Castañeda</em></footer>
+	<footer >
+		<p><strong>@Milton1792</strong></p>
+		<p><em>Milton Castañeda®</em></p>
+	</footer>
 	<script>
 		inicio();
 	</script>
