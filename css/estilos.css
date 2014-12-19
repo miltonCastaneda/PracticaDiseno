@@ -20,6 +20,7 @@ header figure{
 }
 header #autor img{
 	border-radius: 55%;
+	background-color: #ccc;
 	height: 6em;
 	width: 6em;
 }
@@ -32,9 +33,7 @@ h2{
 	margin: 0;
 	padding: 0;
 }
-img{
-	max-width: 20em;/**************mientras se aplica diseño responsivo*****/
-}
+
 nav{
 	background-color: #9F2C2C;	
 }
@@ -45,7 +44,6 @@ nav ul{
 }
 nav ul li{
 	display: inline;
-	
 }
 nav ul li a{
 	color: white;
@@ -54,40 +52,71 @@ nav ul li a{
 }
 nav ul li a:hover{
 	background-color: #D73939;
-	transition-duration: 1000ms;
+	transition-duration: 300ms;
 }
 section{
-	height: 34em;
+	display: block;
+	overflow: hidden;
 }
+
 section article{
-	height: 30em;
+	min-height: 36em;	
+	overflow: hidden;
 }
 section article h2{
-	margin: 22% 22%;
-	padding: 2em;
+	margin: 7em 0 0 0;
+	text-align: center;
 	width: 100%;
 }
-section a{
+section article figure.portafolio{
+	background-color: red;
+	float: left;
+}
+section article figure.portafolio img{
+	width: 15em;
+	min-width: 15em;
+}
+section div.enlace{
+	width: 100%;
+	text-align: center;
+	padding: 2em;
+
+}
+section div.enlace a{
 	font-size: 2em;
-	margin: 1em 22%;
-	padding: 2em;
 	width: 100%;
+	padding: 2em;
 }
-#home{
-	background-image: url(../imagenes/fondo.jpg);
-	color: white;
-	
-}
-
-
-/*
 #containerFixed{
 
 	position: fixed;
 	top: 0;
 	width: 100%;
-	
 }
-*/
+#contactame article form input, textarea{
+	border-radius: .3em;
+	display: block;
+	margin: .3em 2em 0 2em;
+	padding: .3em;
+}
+#contactame article form label{
+	margin: 2em 2em 2em 2em;
+}
+#contactame article form input.boton{
+	background-color: rgb(184, 76, 76);
+	color: white;
+	margin: 2em 2em 0 2em;
+	display: inline-block;
+	padding: .4em;
+
+	box-shadow: rgba(219, 101, 39,0.5) 2px 2px 2px;
+}
+#home{
+
+	background-image: url(../imagenes/fondo.jpg);
+	color: white;
+}
+
+
 
 

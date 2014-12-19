@@ -9,10 +9,11 @@
 
 </head>
 <body>
+	
 	<div id="containerFixed">
 	<header>
 		<figure id="autor">
-			<img src="imagenes/milton.png" alt="logo del autor" />
+			<img src="imagenes/foto2.png" alt="logo del autor" />
 		</figure>
 		<h1>
 			BLOG DE PRACTICA "Diseño Web"MILTON CASTAÑEDA
@@ -20,11 +21,11 @@
 	</header>
 	<nav>
 		<ul>
-			<li ><a href="">HOME</a></li>
-			<li ><a href="">CONTACTAME</a></li>
-			<li ><a href="">PORTAFOLIO</a></li>
-			<li ><a href="">EXPERIENCIA</a></li>
-			<li ><a href="">EJEMPLO</a></li>
+			<li ><a href="#home">HOME</a></li>
+			<li ><a href="#contactame">CONTACTAME</a></li>
+			<li ><a href="#portafolio">PORTAFOLIO</a></li>
+			<li ><a href="#perfil">PERFIL</a></li>
+			<li ><a href="#ejemplo">EJEMPLO</a></li>
 			
 		</ul>
 	</nav>
@@ -33,11 +34,11 @@
 		<article>
 			<h2>Milton Castañeda</h2>
 		</article>
-		<a href="">siguiente</a>
+		<div class="enlace" ><a href="#portafolio">siguiente</a></div>
 	</section>
 	<section class="seccion" id="portafolio">
 		<article>
-			<h2>PORTAFOLIO</h2>
+			<h2 >PORTAFOLIO</h2>
 			<figure class="portafolio">
 				<img src="imagenes/portafolio1.jpg" alt="portafolio1">
 				<figcaption>Portafolio </figcaption>
@@ -59,51 +60,52 @@
 				<figcaption>Portafolio 5</figcaption>
 			</figure>
 		</article>
-		<a href="">siguiente</a>
+		<div class="enlace" ><a href="#perfil">siguiente</a></div>
 	</section>
-	<section class="seccion" id="perfil">
+	<section class="seccion" id="perfil" >
 		<article>
 			<h2>PERFIL</h2>
 			<p>
 				For pages that set an initial or maximum scale, this means the width property actually translates into a minimum viewport width. For example, if your layout needs at least 500 pixels of width then you can use the following markup. When the screen is more than 500 pixels wide, the browser will expand the viewport (rather than zoom in) to fit the screen:
 			</p>
 		</article>
-		<a href="">siguiente</a>
+		<div class="enlace" ><a href="#contactame">siguiente</a></div>
 	</section>
 	<section class="seccion" id="contactame">
 		<article>
 			<h2>CONTACTAME</h2>
 			<form method="post">
+				<label for="nombre">Nombre</label>
 				<input type="text" placeholder="nombre" name="nombre" id="nombre">
+				<label for="apellido">Apellido</label>
 				<input type="text" placeholder="apellido" name="apellido" id="apellido">
+				<label for="mensaje">Mensaje</label>
 				<textarea name="mensaje" id="mensaje" placeholder="mensaje" cols="30" rows="10">
 					
 				</textarea>
-				<input type="submit">
-				<input type="reset">
+				<input type="submit" value="Enviar" class="boton">
+				<input type="reset" value="Restablecer" class="boton">
 			</form>
 			<figure class="contacteme">
 				<a href=""><img src="" alt=""></a>
 				<figcaption></figcaption>
 			</figure>
 		</article>
-		<a href="">siguiente</a>
+		<div class="enlace" ><a href="#ejemplo">siguiente</a></div>
 	</section>
 
-	<section class="seccion" id="ejmplo">
+	<section class="seccion" id="ejemplo">
 		<article class="articulo">
 			<h2>EJEMPLO</h2>
 			<p >Esto es una <strong> practica de Git</strong> </p>
 			<input type="button" id="boton" value="cambiar">
 			<input type="text" id="campo" placeholder="ingreso un numero del 1 al 3">
 			<figure id="figura" >
-				<img src="imagenes/1.jpg" alt="imagen" id="imagen" width="700" height="300" >	
+				<img src="imagenes/1.jpg" alt="imagen" id="imagen" width="700" height="300" />	
 			</figure>
 			
 		</article>
-		<div>
-			<a href="">siguiente</a>	
-		</div>
+		<div class="enlace"><a href="#home">HOME</a></div>
 		
 	</section>
 	<footer >
@@ -111,7 +113,7 @@
 		<p><em>Milton Castañeda®</em></p>
 	</footer>
 	<script>
-		inicio();
+		//inicio();
 	</script>
 </body>
 </html>
